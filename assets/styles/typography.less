@@ -1,0 +1,127 @@
+/*  _____________________________________________________________________________
+
+    TYPOGRAPHY
+    _____________________________________________________________________________ */
+
+/**
+ * The typography is defined globally
+ * Do not declare styles that are not related to typo here
+ * @author: info@avantcy.se
+ */
+@font-face {
+  font-family:  "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*  _____________________________________________________________________________
+
+    DEFAULT
+    _____________________________________________________________________________
+*/
+
+html {
+  font-size: 19px;
+}
+
+body {
+  font-family:  "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 200;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+br {
+  display: block;
+  margin: 5px 0;
+}
+
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+
+}
+
+
+/*  _____________________________________________________________________________
+
+    COMPONENTS
+    _____________________________________________________________________________
+*/
+
+.menu {
+
+  font-size: 30px;
+}
+
+
+/**
+ * MISC
+ * Defines various elements styles globally
+ */
+a{
+  color: #000000;
+  &:hover{
+    color:#000000;
+  }
+}
+
+p {}
+
+button,
+input[type="submit"] { font-size: 18px; }
+
+label,
+textarea,
+input:not([type="submit"]) { font-size: 16px; }
+
+::-webkit-input-placeholder { color: rgba(255,255,255,.7); }
+::-moz-placeholder { color: rgba(255,255,255,.7); }
+:-ms-input-placeholder { color: rgba(255,255,255,.7); }
+
+
+
+i {}
+
+
+/*  _____________________________________________________________________________
+
+    MEDIA QUERIES
+    _____________________________________________________________________________ */
+
+/**
+ * For all breakpoints refers to `_vars.less`
+ * Here we're using desktop first…
+ */
+
+
+// TABLET
+// ___________________
+
+@media @max-tablet {
+
+
+}
+
+
+// PALM
+// ___________________
+
+@media @max-palm {
+
+
+}
+
+
+
+
+

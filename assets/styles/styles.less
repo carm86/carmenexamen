@@ -1,0 +1,426 @@
+@import "_vars";
+@import "_breakpoints";
+@import "_mixins";
+@import "_helpers";
+@import "reset";
+
+
+/*  _____________________________________________________________________________
+
+    DEFAULT STYLES
+    _____________________________________________________________________________ */
+
+html,
+body {
+  width: 100%;
+  //background-color: black;
+
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  overflow: hidden;
+  zoom: 1;
+}
+
+//front-page
+.image-width{
+  width: 100%;
+  height: 476px;
+  object-fit: cover;
+}
+
+.imagesize{
+  padding-top: 50px
+}
+
+.text-content{
+  padding: 50px 0 80px;
+  text-align: center;
+}
+
+.headline{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.textcontentp {
+  color: #010101;
+  font-size: 15px;
+  font-family: 'Open Sans',sans-serif;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 20px;
+}
+
+.three-column{
+  padding: 50px 0 30px;
+}
+
+.h2text{
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.fieldtext{
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  padding-top: 20px;
+}
+
+.center{
+  margin: 0 auto;
+}
+
+//page
+
+.pagesite{
+  padding-top: 50px;
+  background: #fafafa;
+  border-bottom: 1px solid #dadada;
+}
+
+.pagetitel{
+  font-family: 'Open Sans',sans-serif;
+  text-transform: uppercase;
+}
+
+.contenttext{
+  font-family: 'Open Sans',sans-serif;
+  padding-top: 20px;
+  color: #010101;
+}
+
+.pageimage {
+  padding-bottom: 60px;
+}
+
+.button{
+  margin-top: 20px;
+  font-family: 'Open Sans',sans-serif;
+}
+
+//template-page
+
+.templatestyling{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.templatetitel{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+}
+
+.templatetext{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  color: #010101;
+}
+
+//template-contact
+
+.titelpagecontact{
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans',sans-serif;
+}
+
+.textpagecontact{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: 'Open Sans',sans-serif;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+//contactform
+
+/* Contact 7 Forms */
+
+.contactform{
+  margin-left: 20px;
+  font-family: 'Open Sans',sans-serif;
+}
+
+.wpcf7-text, .wpcf7-textarea, .wpcf7-captchar {
+  background-color: #eee !important;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100% !important;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  font-size: 14px;
+  color: #999 !important;
+  padding: 16px !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wpcf7-submit {
+  margin: 8px auto 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 6px 20px;
+  line-height: 1.7em;
+  background: transparent;
+  border: 2px solid;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.wpcf7-submit:hover {
+  border-color:#eee;
+  padding: 6px 20px !important;
+}
+
+
+//sidebar
+
+#sidebar{
+  padding-left: 60px;
+}
+
+label, textarea, input:not([type="submit"]) {
+  font-size: 16px;
+  margin-top: 19px;
+}
+
+//placeholder
+input#s{
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+//button
+button, input[type="submit"] {
+  font-size: 18px;
+  padding: 6px 15px;
+  left: -8px;
+  background-color: #207cca;
+  color: #fafafa;
+  margin-top: 10px;
+}
+
+
+//title
+.widget-title{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+ul {
+  padding-top: 10px;
+}
+
+//blog index
+
+.blogcontent{
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding-top: 80px;
+  background: #fafafa;
+  border-bottom: 1px solid #dadada;
+}
+
+.thumbnail-img{
+  padding-top: 40px;
+  padding-top: 40px;
+  padding: 4px;
+
+}
+
+.postblogs{
+  padding: 5%;
+}
+
+.blogtitle{
+  text-transform: uppercase;
+
+}
+
+.postet{
+  margin-top: 20px;
+}
+
+.blogcontentext{
+  margin-top: 15px;
+}
+
+p {
+  color: black;
+  font-size: 15px;
+}
+
+//enskild blogpost
+
+.thumbnail-imges{
+  margin-top: 20px;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.blogtitles{
+  margin-top: 20px;
+}
+
+button, input[type="submit"] {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+//Team Css
+
+.intro{
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.team-section{
+  display: inline;
+}
+
+.teamtitle{
+  padding-top: 10px;
+}
+
+.profiles{
+  margin-bottom: 60px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  max-width: 20%;
+  padding-top: 20px;
+}
+
+//Woocommerce
+
+.page-title{
+  margin-top: 20px;
+}
+
+.nopad { padding: 0; }
+.push-down { margin-top: 15px; }
+.push-up { margin-bottom: 15px; }
+.alpha { padding-left: 0; }
+.omega { padding-right: 0; }
+
+
+
+@import "typography";
+
+/*  _____________________________________________________________________________
+
+    COMPONENTS
+    _____________________________________________________________________________ */
+
+@import "components/menu";
+
+/*  _____________________________________________________________________________
+
+    PARTIALS
+    _____________________________________________________________________________ */
+
+@import "partials/header";
+@import "partials/footer";
+
+/*  _____________________________________________________________________________
+
+    MEDIA QUERIES
+    _____________________________________________________________________________ */
+
+/**
+ * For all breakpoints refers to `_vars.less`
+ * Here we're using desktop first…
+ */
+
+
+
+// MOBILE
+// ___________________
+
+
+@media @max-mobile{
+  .image-width{
+    height: auto;
+  }
+  .textcontentp {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .pagesite{
+    padding-bottom: 50px;
+  }
+  .textpagecontact{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .templateimage{
+    padding-top: 30px;
+  }
+  .contactform{
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .templateimage{
+    padding-top: 50px;
+  }
+  #archives-3{
+    padding-bottom: 30px;
+  }
+  #sidebar {
+    padding-left: 0px;
+  }
+  .img-circle {
+    max-width: 30%;
+    padding-top: 20px;
+  }
+  .profiles {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+
+// TABLET
+// ___________________
+
+@media @max-tablet {
+
+
+}
+
+
+// PALM
+// ___________________
+
+@media @max-palm {
+}
+
+
